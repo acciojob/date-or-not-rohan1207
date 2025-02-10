@@ -3,12 +3,12 @@ var isDate = function (input) {
 	const dateRegex = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
 
 	
-    if (value instanceof Date && !isNaN(value)) {
+    if (input instanceof Date && !isNaN(input)) {
         return true; // Valid Date object
     }
 	
     
-    return dateRegex.test(value);
+    return dateRegex.test(input);
 };
 
 // Do not change the code below.
